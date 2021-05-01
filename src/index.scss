@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import "mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'Montserrat', sans-serif;
+}
+
+$text-color: #fff;
+$text-color2: rgb(18,194,0);
+$nav-bg: rgb(0,0,0);
+$main-bg: rgb(23,23,23);
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+background: $main-bg;
+}
+
+.navbar {
+  background: $nav-bg;
+  height: 60px;
+  box-shadow: 0px 0px 10px 0px #888888;
+}
+
+.navbar li {
+  list-style: none;
+  font-size: 2.1rem;
+  color: $text-color;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.main-div {
+ display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: $text-color2;
+  // height: 100%;
+  @include overlay;
+}
+
+.main-div .title {
+  padding: 2rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
